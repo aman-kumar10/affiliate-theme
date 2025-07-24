@@ -1,0 +1,13 @@
+.jkit-menu-container .dropdown-toggle::after {
+    content: unset;
+}
+.jkit-menu-container {
+    display: flex;
+}
+.jkit-menu-container ul#account_items {
+    margin-left: 60px;
+}
+.jkit-menu-container.accounts-items {
+    display: flex;
+    justify-content: flex-end;
+}
