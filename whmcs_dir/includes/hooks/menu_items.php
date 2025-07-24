@@ -46,3 +46,36 @@ add_hook('ClientAreaPrimaryNavbar', 1, function (MenuItem $primaryNavbar) {
         $supportMenu->addChild('Contact Us')->setUri('/contact.php');
     }
 });
+
+
+add_hook('ClientAreaHeaderOutput', 1, function($vars) {
+    return <<<HTML
+<script>
+$(document).ready(function () {
+    $(".div-service-item").each(function () {
+        var dataHref = $(this).attr("data-href");
+        var match = dataHref.match(/id=(\\d+)/);
+
+        if (match && match[1]) {
+            var serviceId = match[1];
+            var loginUrl = "?action=productdetails&id=" + serviceId + "&dosinglesignon=1";
+
+            var loginLink = $("<a>", {
+                class: "btn btn-default btn-sm mr-2",
+                href: loginUrl,
+                target: "_blank",
+                text: "Log in to Control Panel"
+            });
+
+            $(this).find(".div-service-buttons .btn-view-details").before(loginLink);
+        }
+    });
+});
+</script>
+HTML;
+});
+
+
+
+
+

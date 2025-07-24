@@ -1,0 +1,38 @@
+footer.footer{background-color:transparent;color:#000;}
+footer.footer .nav-link{color:#000}
+footer.footer .btn{background-color:#6869FF;color:#fff;}
+
+.card-header{background-color:#6869FF;border-bottom:1px solid #6869FF;color:#fff;}
+.client-home-cards .card-header{background-color:#6869FF;}
+.client-home-cards .card-body {padding-top:20px;}
+
+.sidebar .list-group-item.active,.sidebar .list-group-item.active:focus,.sidebar .list-group-item.active:hover{background-color:#000;border-color:#fff}
+
+header.header .topbar{background-color:#000;color:#fff;}
+header.header .topbar .btn{color:#fff;}
+header.header .topbar .active-client .input-group-text{color:#fff;}
+header.header .topbar .active-client .btn{color:#fff;}
+
+
+.dataTables_wrapper table.table-list thead th.sorting_asc,.dataTables_wrapper table.table-list thead th.sorting_desc{background-color:#6869FF; color:#fff;}
+table.table-list thead th{background-color:#6869FF;border-bottom:1px solid #6869FF;color:#fff;}
+
+.page-item.active .page-link,.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{background-color:#6869FF;border-color:#6869FF}
+
+.navbar-light,.main-navbar-wrapper {background-color:#030520; color:#fff;}
+.navbar-light a,.navbar a{color:#fff}
+.navbar li a,.navbar li a:link,.navbar li a:active,.navbar li a:visited{color:#fff;}
+.navbar li a:focus,.navbar li a:hover{color:#fff; test-decoration:none;}
+
+
+.primary-content .card-body {
+    overflow: inherit;
+}
+
+.sidebar-menu-item-label {
+overflow: hidden;
+text-overflow: ellipsis;
+width: 100%;
+}
+
+

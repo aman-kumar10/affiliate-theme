@@ -383,6 +383,8 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/affiliatehosting.ai\/wp-a
 {/literal}
 <script src="https://affiliatehosting.ai/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.1" id="elementor-pro-frontend-js"></script>
 <script src="https://affiliatehosting.ai/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.1" id="pro-elements-handlers-js"></script>
+
+<script src="{$WEB_ROOT}/templates/{$template}/js/override.js"></script>
 		
 
 		

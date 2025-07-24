@@ -62,7 +62,7 @@ a:hover{
 <link href="{$__assetPath__}" rel="stylesheet">
 {/assetExists}
 {assetExists file="overrides.css"}
-<link href="{$__assetPath__}" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}" rel="stylesheet">
 {/assetExists}
 
 <script>
@@ -75,6 +75,7 @@ whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
     {if $captcha}{$captcha->getPageJs()}{/if}
 </script>
 <script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
+
 
 {if $templatefile == "viewticket" && !$loggedin}
   <meta name="robots" content="noindex" />

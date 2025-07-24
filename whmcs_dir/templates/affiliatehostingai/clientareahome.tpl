@@ -57,18 +57,6 @@
     </div>
 </div>
 
-{foreach $addons_html as $addon_html}
-    <div>
-        {$addon_html}
-    </div>
-{/foreach}
-
-{if $captchaError}
-    <div class="alert alert-danger">
-        {$captchaError}
-    </div>
-{/if}
-
 <div class="client-home-cards">
     <div class="row">
         <div class="col-12">
@@ -129,6 +117,24 @@
             {/foreach}
 
         </div>
+    </div>
+</div>
+
+{foreach $addons_html as $addon_html}
+    <div>
+        {$addon_html}
+    </div>
+{/foreach}
+
+{if $captchaError}
+    <div class="alert alert-danger">
+        {$captchaError}
+    </div>
+{/if}
+
+<div class="client-home-cards">
+    <div class="row">
+        
         <div class="col-md-6 col-lg-12 col-xl-6">
 
             {foreach $panels as $item}

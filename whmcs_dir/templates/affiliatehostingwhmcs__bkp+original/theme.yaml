@@ -1,0 +1,14 @@
+# WHMCS Twenty-One Theme Configuration File
+
+name: "affiliatehostingwhmcs"
+description: "Modified Twenty-One Theme For Integrations"
+author: "WHMCS Limited"
+properties:
+  serverSidePagination: false # Defines client side will handle pagination
+provides:
+  bootstrap: 4.5.2
+  jquery: 1.12.4
+  fontawesome: 5.10.1
+  
+config:
+    parent: twenty-one
