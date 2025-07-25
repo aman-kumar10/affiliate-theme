@@ -4,12 +4,13 @@
             {if $item->hasIcon()}<i class="{$item->getIcon()}"></i>&nbsp;{/if}
             {$item->getLabel()}
             {if $item->hasBadge()}&nbsp;<span class="badge">{$item->getBadge()}</span>{/if}
+            {if $item->hasChildren()} <i aria-hidden="true" class="jki jki-chevron-down-light"></i> {/if}
         </a>
         {if $item->hasChildren()}
             <ul class="dropdown-menu sub-menu{if isset($rightDrop) && $rightDrop} dropdown-menu-right{/if}">
             {foreach $item->getChildren() as $childItem}
                 {if $childItem->getClass() && in_array($childItem->getClass(), ['dropdown-divider', 'nav-divider'])}
-                    <div class="dropdown-divider"></div>
+                    
                 {else}
                     <li menuItemName="{$childItem->getName()}" class="dropdown-item{if $childItem->getClass()} {$childItem->getClass()}{/if}" id="{$childItem->getId()}">
                         <a href="{$childItem->getUri()}" class="dropdown-item px-2 py-0"{if $childItem->getAttribute('target')} target="{$childItem->getAttribute('target')}"{/if}>

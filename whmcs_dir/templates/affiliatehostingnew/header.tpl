@@ -81,7 +81,6 @@
                 </div>
             </div>
         {/if}
-
         <div class="navbar navbar-light navbar-expand-xl main-navbar-wrapper">
             <div class="container">
                 <a class="navbar-brand mr-3" href="https://affiliatehosting.ai/">

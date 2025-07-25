@@ -7,7 +7,6 @@
                 <i class="fas fa-cube"></i>
                 <div class="stat">{$clientsstats.productsnumactive}</div>
                 <div class="title">{lang key='navservices'}</div>
-                <div class="highlight bg-color-blue"></div>
             </a>
         </div>
         {if $clientsstats.numdomains || $registerdomainenabled || $transferdomainenabled}
@@ -16,7 +15,6 @@
                     <i class="fas fa-globe"></i>
                     <div class="stat">{$clientsstats.numactivedomains}</div>
                     <div class="title">{lang key='navdomains'}</div>
-                    <div class="highlight bg-color-green"></div>
                 </a>
             </div>
         {elseif $condlinks.affiliates && $clientsstats.isAffiliate}
@@ -25,7 +23,6 @@
                     <i class="fas fa-shopping-cart"></i>
                     <div class="stat">{$clientsstats.numaffiliatesignups}</div>
                     <div class="title">{lang key='affiliatessignups'}</div>
-                    <div class="highlight bg-color-green"></div>
                 </a>
             </div>
         {else}
@@ -34,7 +31,6 @@
                     <i class="far fa-file-alt"></i>
                     <div class="stat">{$clientsstats.numquotes}</div>
                     <div class="title">{lang key='quotes'}</div>
-                    <div class="highlight bg-color-green"></div>
                 </a>
             </div>
         {/if}
@@ -43,7 +39,6 @@
                 <i class="fas fa-comments"></i>
                 <div class="stat">{$clientsstats.numactivetickets}</div>
                 <div class="title">{lang key='navtickets'}</div>
-                <div class="highlight bg-color-red"></div>
             </a>
         </div>
         <div class="col-6 col-xl-3">
@@ -51,7 +46,6 @@
                 <i class="fas fa-credit-card"></i>
                 <div class="stat">{$clientsstats.numunpaidinvoices}</div>
                 <div class="title">{lang key='navinvoices'}</div>
-                <div class="highlight bg-color-gold"></div>
             </a>
         </div>
     </div>

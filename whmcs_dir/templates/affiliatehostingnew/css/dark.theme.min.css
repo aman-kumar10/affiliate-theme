@@ -115,3 +115,153 @@ table.ox-table-accounts .input-group {
 .promo-container {background-color:#04043F;}.content h4 {color:#fff;}
 
 #stripeCreditCard,#stripeExpiryDate,#stripeCvc,.frm-credit-card-input input {background-color:#fff !important; color:#000 !important;}
+
+
+/*  */
+
+/* ************************************************************ Custom CSS ************************************************************ */
+
+.primary-bg-color {
+  color: #d3d3d3;
+  background-color: #030520;
+}
+/* footer start */
+
+footer.footer {
+  background-color: #030520;
+  color: #000;
+}
+footer.footer .btn {
+  background-color: #fe01ff;
+  color: #fff;
+}
+.modal-localisation .item-selector .item.active {
+  background-color: #fe01ff;
+  color: #fff;
+}
+.modal-localisation .item-selector .item:hover {
+  background-color: #fe01ff;
+  color: #fff;
+}
+footer.footer .btn:hover {
+  background-color: #fff;
+  color: #fe01ff;
+}
+.modal-localisation .modal-content {
+  background-color: #04043F;
+}
+.modal-footer .btn-default {
+  background-color: #fe01ff;
+  color: #fff;
+}
+.elementor-widget-icon-box .elementor-icon-box-content {
+  flex-grow: 1;
+}
+.elementor-214 .elementor-element.elementor-element-6d84de0 .elementor-icon-box-title {
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.elementor-214 .elementor-element.elementor-element-6d84de0 .elementor-icon-box-description {
+  font-family: 'Inter', Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+.elementor-214 .elementor-element.elementor-element-02f16bf .elementor-icon-box-title {
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.elementor-214 .elementor-element.elementor-element-02f16bf .elementor-icon-box-description {
+  font-family: 'Inter', Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+.elementor-214 .elementor-element.elementor-element-a803fb1 .elementor-icon-box-title {
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.elementor-214 .elementor-element.elementor-element-a803fb1 .elementor-icon-box-description {
+  font-family: 'Inter', Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon {
+  background: #fe01ff;
+  border-radius: 50%;
+}
+.elementor-214 .elementor-element.elementor-element-7742139 .elementor-social-icon {
+  background: #fe01ff;
+  border-radius: 50%;
+}
+.elementor-214 .elementor-element.elementor-element-7742139 .elementor-social-icon:hover {
+  background-color: #FFFFFF;
+  color: #fe01ff;
+}
+.elementor-214 .elementor-element.elementor-element-7742139 .elementor-social-icon:hover svg {
+  fill: #fe01ff;
+}
+.e-con>.e-con-inner>.elementor-widget>.elementor-widget-container, .e-con>.elementor-widget>.elementor-widget-container p {
+  font-family: "Inter";
+  color: #828FA0;
+  font-size: 16px;
+  font-weight: 400;
+  --container-widget-width: 440px;
+  --container-widget-flex-grow: 0;
+  width: 440px;
+  max-width: 440px;
+}
+.elementor-214 .elementor-element.elementor-element-e147f45 .elementor-heading-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #fe00ff;
+}
+.elementor-214 .elementor-element.elementor-element-3e10b0b .elementor-icon-list-item > a {
+  font-size: 16px;
+  font-weight: 400px;
+}
+.elementor-214 .elementor-element.elementor-element-3e10b0b .elementor-icon-list-text {
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+.elementor-214 .elementor-element.elementor-element-3e10b0b .elementor-icon-list-item > a:hover {
+  color: #fe00ff;
+}
+.elementor-214 .elementor-element.elementor-element-9c24f08 .elementor-heading-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #fe00ff;
+}
+.elementor-214 .elementor-element.elementor-element-005400f .elementor-icon-list-item > a {
+  font-size: 16px;
+  font-weight: 400px;
+}
+.elementor-214 .elementor-element.elementor-element-005400f .elementor-icon-list-text {
+  color: #FFFFFF;
+  transition: color 0.3s;
+} 
+.elementor-214 .elementor-element.elementor-element-005400f .elementor-icon-list-item > a:hover {
+  color: #fe00ff;
+}
+.elementor-214 .elementor-element.elementor-element-ed2cfab {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #828FA0;
+} 
+
+
+/* footer ends */
