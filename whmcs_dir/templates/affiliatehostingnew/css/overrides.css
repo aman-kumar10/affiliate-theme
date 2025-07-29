@@ -845,7 +845,6 @@ body .landing-page.sitelock .emergency .btn {
     font-size: 18px !important;
     font-weight: 400 !important;
 }
-
 .landing-page.marketgoo .plan.marketgoo_pro .header h4 {
     color: #fe00ff !important;
 }
@@ -858,7 +857,9 @@ body .landing-page.sitelock .emergency .btn {
 .marketgoo .faqs .faq h4 {
     font-weight: 500 !important;
 }
-
+#registration form#frmCheckout {
+    margin-top: 0;
+}
 @media (min-width: 992px) {
     body .landing-page.sitelock .plans .plan ul {
         height: 725px;

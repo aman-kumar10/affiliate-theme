@@ -9,17 +9,24 @@ if (!defined("WHMCS")) {
 add_hook('ClientAreaPrimaryNavbar', 1, function (MenuItem $primaryNavbar) {
 
     try {
+        /* Header Items after login */
         if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])) {
     
+            // Remove "Open Ticket" menu item
             if (!is_null($primaryNavbar->getChild('Open Ticket'))) {
                 $primaryNavbar->removeChild('Open Ticket');
             }
     
+            // Add Open Ticket in Support menu item
             if (!is_null($primaryNavbar->getChild('Support'))) {
                 $primaryNavbar->getChild('Support')->addChild('Open Ticket')->setUri('/submitticket.php');
             }
         }
     
+
+        /* Header Items before login */
+
+        // Add new menu item "Support"
         if (is_null($primaryNavbar->getChild('Support'))) {
             $primaryNavbar->addChild('Support', [
                 'label' => 'Support',
@@ -28,10 +35,13 @@ add_hook('ClientAreaPrimaryNavbar', 1, function (MenuItem $primaryNavbar) {
             ]);
         }
     
+
+        // Replace the main menu items as sub menues in Support menu
         $supportMenu = $primaryNavbar->getChild('Support');
-    
+
         if (!is_null($supportMenu)) {
     
+            // Remove items
             if (!is_null($supportMenu)) {
                 $primaryNavbar->removeChild('Announcements');
             }
@@ -42,6 +52,7 @@ add_hook('ClientAreaPrimaryNavbar', 1, function (MenuItem $primaryNavbar) {
                 $primaryNavbar->removeChild('Contact Us');
             }
     
+            // Add items
             $supportMenu->addChild('Announcements')->setUri('/index.php?rp=/announcements');
             $supportMenu->addChild('Knowledgebase')->setUri('/index.php?rp=/knowledgebase');
             $supportMenu->addChild('Contact Us')->setUri('/contact.php');
