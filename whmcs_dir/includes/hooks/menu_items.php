@@ -1,63 +1,69 @@
 <?php
 
+use WHMCS\Databse\Capsule;
 use WHMCS\View\Menu\Item as MenuItem;
 
 if (!defined("WHMCS")) {
-    die("This file cannot be accessed directly!");
+    die("You cannot access this file directly!");
 }
 
-add_hook('ClientAreaPrimaryNavbar', 1, function (MenuItem $primaryNavbar) {
+/* Manage Menu Items */
+add_hook("ClientAreaPrimaryNavbar", 1, function (MenuItem $primaryNavbar) {
 
     try {
-        if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])) {
-    
-            if (!is_null($primaryNavbar->getChild('Open Ticket'))) {
-                $primaryNavbar->removeChild('Open Ticket');
-            }
-    
-            if (!is_null($primaryNavbar->getChild('Support'))) {
-                $primaryNavbar->getChild('Support')->addChild('Open Ticket')->setUri('/submitticket.php');
-            }
-        }
-    
-        if (is_null($primaryNavbar->getChild('Support'))) {
-            $primaryNavbar->addChild('Support', [
-                'label' => 'Support',
-                'uri' => '#',
-                'order' => 99,
+        /* Header Items before login */
+
+        // add new menu item "Support"
+        if (is_null($primaryNavbar->getChild("Support"))) {
+            $primaryNavbar->addChild("Support", [
+                "label" => "Support",
+                "uri" => "#",
+                "order" => 99
             ]);
         }
-    
-        $supportMenu = $primaryNavbar->getChild('Support');
-    
+
+        $supportMenu = $primaryNavbar->getChild("Support");
+
+        // replace the main menu items as sub menues in Support menu
         if (!is_null($supportMenu)) {
-    
-            if (!is_null($supportMenu)) {
-                $primaryNavbar->removeChild('Announcements');
-            }
-            if (!is_null($supportMenu)) {
-                $primaryNavbar->removeChild('Knowledgebase');
-            }
-            if (!is_null($supportMenu)) {
-                $primaryNavbar->removeChild('Contact Us');
-            }
-    
-            $supportMenu->addChild('Announcements')->setUri('/index.php?rp=/announcements');
-            $supportMenu->addChild('Knowledgebase')->setUri('/index.php?rp=/knowledgebase');
-            $supportMenu->addChild('Contact Us')->setUri('/contact.php');
+            // remove items
+            $primaryNavbar->removeChild("Announcements");
+            $primaryNavbar->removeChild("Knowledgebase");
+            $primaryNavbar->removeChild("Contact Us");
+
+            // add items
+            $primaryNavbar->addChild("Announcements")->setUri("/index.php?rp=/announcements");
+            $primaryNavbar->addChild("Knowledgebase")->setUri("/index.php?rp=/knowledgebase");
+            $primaryNavbar->addChild("Contact Us")->setUri("/contact.php");
         }
-        
+
+
+        /* Header Items after login */
+        if (isset($_SESSION["uid"]) && !empty($_SESSION["uid"])) {
+
+            // remove "Open Ticket" menu item
+            if (!is_null($primaryNavbar->getChild("Open Ticket"))) {
+                $primaryNavbar->removeChild("Open Ticket");
+            }
+
+            // add Open Ticket in Support menu item
+            if (!is_null($primaryNavbar->getChild("Support"))) {
+                $supportMenu = $primaryNavbar->getChild("Support");
+                $supportMenu->addChild("Open Ticket")->setUri("/submitticket.php");
+            }
+        }
     } catch (Exception $e) {
         logActivity("Error in ClientAreaPrimaryNavbar. Error: " . $e->getMessage());
     }
-
 });
 
 
+/* Add cPanel Login Button */
 add_hook('ClientAreaHeaderOutput', 1, function($vars) {
 
     try {
 
+        // return script to append button's HTML with service view 
         return <<<HTML
             <script>
                 $(document).ready(function () {
@@ -92,8 +98,3 @@ add_hook('ClientAreaHeaderOutput', 1, function($vars) {
     }
 
 });
-
-
-
-
-
