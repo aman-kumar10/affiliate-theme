@@ -219,6 +219,7 @@ body #order-standard_cart .domain-selection-options .option {
 #order-standard_cart .field, #order-standard_cart .form-control {
     border: 1px solid #eaeaeb !important;
     background-color: #040521;
+        color: #fff;
 }
 .input-group-text{
     border: 1px solid #eaeaeb !important;
@@ -272,9 +273,9 @@ body #order-standard_cart .domain-selection-options .option {
     border-color: #fe00ff;
 }
 .btn-success:hover {
-    color: #fe00ff;
-    background-color: #fff;
-    border-color: #fff;
+    color: #ffffff;
+    background-color: #6869ff;
+    border-color: #6869ff;
 } 
 .btn-success:active {
     color: #fe00ff;
@@ -391,9 +392,9 @@ ul.dropdown-menu.sub-menu li a.dropdown-item:active {
     border-color: #fe00ff;
 }
 .btn.btn-order-now:hover {
-    background-color: #fff;
-    border-color: #fe00ff;
-    color: #fe00ff;
+    background-color: #6869ff;
+    border-color: #6869ff;
+    color: #fff;
 }
 .btn.btn-order-now:active {
     background-color: #fff !important;
@@ -435,30 +436,431 @@ ul.dropdown-menu.sub-menu li a.dropdown-item:active {
 .text-primary {
     color: #6869ff !important;
 }
-
-
-
-
-
-
-
-/* *************************************************************************************************************************** */
-/* Form */
-.form-control {
-    color: #fff;
-    background-color: #02022d;
-    border: 1px solid #e9e8e8;
-    border-radius: 50px;
+body #order-standard_cart .products .product{
+    background: #04043F;
 }
-.form-control:focus {
+body #order-standard_cart .products .product header {
+    background: transparent;
+}
+input:-webkit-autofill,  select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #03022e inset;
+}
+ 
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+    background-color: #03022e;
+    transition: background-color 5000s 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+form#frmConfigureDomains {
+    background: #04032e;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #eaeaeb;
+} 
+body #order-standard_cart .view-cart-items .item-domain {
+    font-size: 20px;
+    color: #f500ff;
+}
+body #order-standard_cart .btn-remove-from-cart {
+    color: #ffffff;
+}
+body #order-standard_cart .mc-promo .btn-add, body #order-standard_cart .mc-promo .arrow{
+    background-color:#6869FF !important;
+    border-color:#6869FF !important;
+}
+body #order-standard_cart .mc-promo .price {
+    color: #f500ff !important;
+}
+body #order-standard_cart .mc-promo .expander {
+    color: #ffffff !important;
+}
+body #order-standard_cart .account-select-container {
+    margin: 0;
+    border: 1px solid #eaeaeb !important;
+    background: #04032d;
+}
+body form#frmCheckout {
+    background: #04032d;
+    padding: 20px;
+    margin-top: 20px;
+}
+body .landing-page.sitelock .plans {
+    background-color: #030520;
+}
+body .landing-page.sitelock .plans .plan {
+    background-color: #03022e;
+}
+body .landing-page.sitelock .plans .plan .header {
+    background-color: transparent;
+}
+body .landing-page.sitelock .plans .plan ul li span {
+    color: #ffffff;
+}
+body .landing-page.sitelock .plans .plan ul li{
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+body .landing-page.sitelock .plans .plan .btn {
+    background-color: #6869ff !important;
+}
+body .landing-page.sitelock .emergency .btn:hover{
+    background-color:#fe00ff !important;
+    border-color:#fe00ff;
+}
+body .landing-page.sitelock .features .fas, body .landing-page.sitelock .features .far, body .landing-page.sitelock .emergency .fas, body .landing-page.sitelock .emergency .far {
+    color: #6c6aff;
+    font-size:40px;
+}
+body .landing-page.sitelock .emergency {
+    background-color: #040521;
+}
+body .landing-page.sitelock .emergency .btn{
+    background-color: #6869ff;
+    border-color:#6869ff;
+}
+.row:has(.landing-page) {
+    margin: 0;
+}
+.landing-page .navbar .navbar-nav > li > a{
+    border-bottom: transparent !important;
     color: #fff;
-    background-color: #02022d;
+}
+nav.navbar.navbar-light.bg-light.navbar-expand-lg.p-0 {
+    background: #060540 !important;
+}
+body .navbar-light .navbar-nav .nav-link:focus, body .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255);
+}
+.landing-page.sitelock .emergency h2.text-danger {
+    color: #6f6bff !important;
+}
+body .landing-page.marketgoo .video-banner {
+    background-color: #030520;
+    padding: 40px 0px;
+}
+body .landing-page.marketgoo .feature-wrapper {
+    background-color: #040521;
+    color: #fff;
+}
+body .plan-container {
+    float: left;
+    width: 100%;
+    background: #050522;
+    padding: 20px;
+    border-radius: 5px;
+}
+body .landing-page.marketgoo .plan.marketgoo_pro ul {
+    background-color: transparent;
+    color: #fff;
+}
+body .btn-info, body .landing-page.marketgoo .plan .btn-signup {
+    color: #ffffff;
+    background-color: #6869ff;
+    border-color: #6869ff;
+}
+body .btn-info:hover, body .landing-page.marketgoo .plan .btn-signup:hover{
+    background-color: #fe00ff;
+    border-color: #fe00ff;
+    color:#fff;
+}
+body .landing-page.marketgoo .faqs {
+    background-color: #040521;
+}
+.landing-page.sitelock .feature-wrapper .content {
+    margin-left: 59px;
+}
+body .landing-page.sitelock .plans .plan .header span {
+    color: #fe00ff;
+}
+#stripeCreditCard, #stripeExpiryDate, #stripeCvc, .frm-credit-card-input input {
+    background-color: #ffffff00 !important;
+    color: #ffffff !important;
+}
+.invoice-container {
+    background-color: #02022D;
+    border: 1px solid #eaeaeb;
+    color: #fff;
+}
+
+.invoice-container .card.bg-default {
+    background: #030520;
+    border: 1px solid;
+    margin-bottom: 30px;
+}
+.invoice-container td {
+    color: #fff;
+}
+.invoice-container td.total-row {
+    background: transparent;
+}
+.modal .modal-header {
+    background-color: transparent;
+    color: #fff;   
+}
+.form-control {
+    background-color: transparent;
+    border-color: #eaeaeb;
+}
+.modal-footer .btn-default {
+    background-color: #fe01ff;
+    color: #fff;
     border-color: #fe00ff;
 }
-.frm-credit-card-input input {
-    background-color: #02022d !important;
+.btn-success:hover, .bg-color-blue:hover, .bg-color-asbestos:hover, .promo-banner.sitelock .btn:hover, .promo-banner.marketgoo .btn:hover, a.btn.btn-default:hover{
+    color: #ffffff;
+    background-color: #fe00ff;
+    border-color: #fe00ff;
+}
+.md-editor .md-footer, .md-editor>.md-header {
+    background: transparent;
+}
+input.btn.btn-success.btn-recaptcha.btn-recaptcha-invisible:hover {
+    color: #ffffff;
+    background-color: #6869ff;
+    border-color: #6869ff;
+}
+.client-home-cards .card-header .btn:hover {
+    color: #ffffff;
+}
+.modal-footer .btn-default:hover{
+    color: #ffffff;
+    background-color: #6869ff;
+    border-color: #6869ff;
+}
+.alert-info.custom-info{
+    color: #ffffff;
+    background-color: #03022e;
+    border-color: #eaeaeb;
+}
+.bootstrap-switch-small.bootstrap-switch.bootstrap-switch-wrapper {
+    border: 1px solid #eaeaeb;
+}
+.custom-file-label {
+    color: #ffffff;
+    background-color: #04043f !important;
+    border: 1px solid #eaeaeb;
+}
+.modal-header > .close {
+    color: inherit;
+    opacity: 1;
+}
+.modal-header.bg-primary.text-white {
+    background-color: transparent !important;
+    border-bottom: 1px solid #eaeaeb;
+}
+.modal-header.bg-primary.text-white {
+    background-color: transparent !important;
+    border-bottom: 1px solid #eaeaeb;
+}
+.modal-title {
+    margin-top: 0;
+}
+.btn-success.disabled, .btn-success:disabled {
+    color: #ced4da;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+#order-standard_cart .btn-checkout {
+    padding: 15px 34px;
+    width: 100%;
+}
+#order-standard_cart .btn-checkout.disabled, .btn-primary.disabled, .btn-primary:disabled {
+    color: #ffffff;
+    background-color: #6869ff;
+    border-color: #6869ff;
+}
+#order-standard_cart .btn-checkout.disabled:hover {
+    background-color: #fe00ff;
+    border-color: #fe00ff;
+}
+#modalGeneratePassword .btn-sm.copy-to-clipboard img {
+    filter: invert(1);
+}
+
+.affiliate-wrapper .table-bordered td, .affiliate-wrapper .table-bordered th {
+    border: 1px solid #eaeaeb;
+}
+
+.affiliate-wrapper button.btn.btn-lg.btn-danger {
+    color: #ffffff;
+    background-color: #6869FF;
+    border-color: #6869FF;
+    margin-bottom: 10px;
+}
+.affiliate-wrapper button.btn.btn-lg.btn-danger:hover {
+    background: #fe00ff;
+    border-color: #fe00ff;
+}
+.affiliate-stat i {
+    font-size: 2em;
+    color: #f501ff;
+}
+.affiliate-stat {
+    font-size: 1.6em;
+    text-align: right;
+    background:#060540 !important;
+    color: #fff;
+}
+.affiliate-stat span {
+    display: block;
+    font-size: 1.4em;
+}
+footer.footer .btn:hover {
+    background-color: #6869FF !important;
+    color: #fff;
+}
+body .landing-page.sitelock .plans .plan .btn:hover {
+    background-color: #f501ff !important;
+}
+.store-promoted-product ul.features li {
+    color: #fff;
+}
+.store-promoted-product .btn-success:hover {
+    background-color: #6c6aff;
+    border-color: #6c6aff;
+}
+.responsive-tabs-sm .nav-item a:hover {
+    background-color: transparent;
+}
+#order-standard_cart .btn-checkout:hover {
+    background: #6c6aff;
+    border-color: #6c6aff;
+}
+#order-standard_cart .view-cart-items .item:not(:last-child) {
+    border-bottom: 1px solid #232348;
+}
+div#stripeElements iframe {
+    filter: invert(1);
+}
+div#stripeElements .StripeElement--invalid iframe {
+    filter: unset;
+}
+.invoice-summary-table td.total-row {
+    background-color: transparent;
+}
+body {
+    background-color: #030520;
+}
+.marketgoo .faqs h3 {
+    color: #fff;
+}
+.faq h4, .faq p {
+    color: #fff;
+}
+.alert-info {
+    color: #ffffff;
+    background-color: #6c6aff;
+    border-color: #6c6aff;
+}
+a#continueShopping {
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+#registration .field::placeholder, #registration .form-control::placeholder {
+  color: #fff;
+}
+#registration .field, #registration .form-control{
+    background-color: transparent;
+    border-color: #eaeaeb;
+    color:#FFF;
+}
+.bootstrap-switch-small.bootstrap-switch.bootstrap-switch-wrapper {
+    border: 1px solid #eaeaeb;
+}
+button:focus {
+    outline: none;
+}
+#registration #stateselect {
+    background-color: #03022e !important;
+}
+#registration .field-icon i {
+    color: #ffffff !important;
+}
+
+/* Sitelock */
+.landing-page.sitelock .hero h2, 
+.landing-page.sitelock .content-block h2, 
+.landing-page.sitelock .content-block.plans h2, 
+.landing-page.sitelock .content-block.features h2,
+.landing-page.sitelock .content-block.faq h2{
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+.landing-page.sitelock .content-block p {
+    font-size: 18px !important;
+}
+.landing-page.sitelock .content-block.plans h3,
+.landing-page.sitelock .content-block.features h3,
+.landing-page.sitelock .content-block.emergency h3 {
+    font-size: 24px !important;
+    font-weight: 400 !important;
     color: #fff !important;
 }
 
+.landing-page.sitelock .emergency h2.text-danger {
+    font-weight: 700 !important;
+}
 
+.landing-page.sitelock .emergency .price.float-left {
+    font-weight: 500;
+}
+.landing-page.sitelock .feature-wrapper .content,
+.landing-page.sitelock .feature-wrapper .content {
+    margin-left: 50px !important;
+}
+.landing-page.sitelock .features .feature-wrapper h4,
+.landing-page.sitelock .emergency .feature-wrapper h4 {
+    font-weight: 500 !important;
+    color: #fff !important;
+}
+body .landing-page.sitelock .features .fas, 
+body .landing-page.sitelock .features .far, 
+body .landing-page.sitelock .emergency .fas, 
+body .landing-page.sitelock .emergency .far {
+    color: #6c6aff;
+    font-size: 1.7em !important;
+}
+body .landing-page.sitelock .emergency .btn { 
+    padding: 10px 45px;
+}
 
+.landing-page.sitelock .plans .plan-comparison h4 {
+    font-weight: 700 !important;
+}
+.landing-page.sitelock .plans .plan-comparison p {
+    font-size: 18px !important;
+}
+
+/* Marketgoo */
+.landing-page.marketgoo .hero h2 {
+    font-weight: 500 !important;
+}
+.landing-page.marketgoo .feature-blocks .block span {
+    font-weight: 500 !important;
+}
+.landing-page.marketgoo .feature-blocks .block p {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+.landing-page.marketgoo .plan.marketgoo_pro .header h4 {
+    color: #fe00ff !important;
+}
+.landing-page.marketgoo .plan .header .best-value {
+    background-color: #fe00ff !important;
+}
+.marketgoo .faqs h3 {
+    font-weight: 700 !important;
+}
+.marketgoo .faqs .faq h4 {
+    font-weight: 500 !important;
+}
+
+@media (min-width: 992px) {
+    body .landing-page.sitelock .plans .plan ul {
+        height: 725px;
+    }
+}
